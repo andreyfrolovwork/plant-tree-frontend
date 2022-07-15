@@ -84,7 +84,7 @@ module.exports = {
     'no-console': 'off',
     'object-curly-spacing': ['warn', 'always'],
     quotes: ['warn', 'single'],
-    'react/jsx-curly-spacing': [
+    /*    'react/jsx-curly-spacing': [
       'warn',
       {
         allowMultiline: true,
@@ -96,21 +96,21 @@ module.exports = {
         },
         when: 'always',
       },
-    ],
+    ],*/
     'react/jsx-filename-extension': [
       'error',
       {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     ],
-    'react/jsx-indent': [
+    /*    'react/jsx-indent': [
       'error',
       4,
       {
         checkAttributes: true,
         indentLogicalExpressions: true,
       },
-    ],
+    ],*/
     'react/jsx-indent-props': ['error', 2],
     'react/prop-types': 'warn',
     /* semi: 'warn',*/

@@ -16,6 +16,8 @@ export default class AuthService {
   }
 
   static async refresh() {
-    return $api.get('/refresh')
+    const res = $api.get('/refresh')
+    localStorage.setItem('token', res.data.accessToken)
+    return res
   }
 }

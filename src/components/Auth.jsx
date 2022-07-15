@@ -7,7 +7,7 @@ export function Auth() {
   console.log('auth')
 
   return (
-    <div>
+    <div className={'main'}>
       <div>
         {mode === 'login' && (
           <>

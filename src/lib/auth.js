@@ -15,8 +15,9 @@ async function loadUser() {
     console.log('if (storage.getToken()) {')
     const data = await AuthService.refresh()
     await handleUserResponse(data)
-    user = data
+    user = data.data
   }
+  console.log('loadUser', user)
   return user
 }
 
@@ -27,6 +28,7 @@ async function loginFn(data) {
   console.log(response)
   const user = await handleUserResponse(response.data)
   console.log(user)
+  console.log('loginFn', user)
   return user
 }
 
@@ -35,6 +37,7 @@ async function registerFn(data) {
   const response = await AuthService.signup(data)
   const user = await handleUserResponse(response.data)
   debugger
+  console.log('reg', user)
   return user
 }
 
