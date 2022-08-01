@@ -1,11 +1,12 @@
-import { useAuth } from '../lib/auth';
+import { useAuth } from '../lib/auth'
 
 export function UserInfo() {
-  const { user, logout } = useAuth();
+  const { user, logout } = useAuth()
+
   return (
     <div>
-      Welcome {user?.name}
+      Welcome {JSON.stringify(user)}
       <button onClick={() => logout()}>Log Out</button>
     </div>
-  );
+  )
 }

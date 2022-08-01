@@ -131,6 +131,7 @@ module.exports = {
         natural: false,
       },
     ],
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
     react: {

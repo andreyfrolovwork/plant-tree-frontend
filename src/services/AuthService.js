@@ -16,8 +16,11 @@ export default class AuthService {
   }
 
   static async refresh() {
-    const res = $api.get('/refresh')
+    const res = await $api.get('/refresh')
     localStorage.setItem('token', res.data.accessToken)
     return res
+  }
+  static async loginWithTg(userdata) {
+    return $api.post('/auth-tg', userdata)
   }
 }
